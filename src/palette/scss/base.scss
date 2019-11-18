@@ -1,0 +1,213 @@
+$font:'Playfair Display', Georgia, serif;
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 1440px;
+}
+main{
+    display: flex;
+    margin-top: 25px;
+}
+.header{
+    width: 100%;
+    height: 48px;
+    -webkit-box-shadow: -1px 6px 10px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: -1px 6px 10px -2px rgba(0,0,0,0.5);
+    box-shadow: -1px 6px 10px -2px rgba(0,0,0,0.5);
+}
+.navigation-menu{
+    display: flex;
+    align-items: center;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.nav-icon{
+    margin: 3%;
+}
+.header-text{
+    margin-right: 5%;
+    width: 200px;
+    font-family: $font;
+    font-size: 22px;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    width: 70.2vw;
+    background-color: rgba(255, 255, 255, 1);
+}
+.button-control{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 600px;
+    margin-left: 4%;
+    padding-top: 25px;
+    background: rgba(255, 255, 255, 1);
+}
+.button-group-vertical{
+    display: flex;
+    flex-direction: column;
+    width: 228px;
+    height: 226px;
+    -webkit-box-shadow: -1px 6px 10px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: -1px 6px 10px -2px rgba(0,0,0,0.5);
+    box-shadow: -1px 6px 10px -2px rgba(0,0,0,0.5);
+    background-color:  rgba(255, 255, 255, 1);
+}
+.button{
+    display: flex;
+    align-items: center;
+    width: 228px;
+    height: 48px;
+    border: 0;
+    background-color:  rgba(255, 255, 255, 1);
+    font-family: $font;
+    font-size: 18px;
+    &:hover{
+        transform: scale(0.95);
+    }
+}
+.button__icon,
+.button__circle{
+    margin-left: 1%;
+    margin-right: 14%;
+}
+.icon-pencil{
+    width: 20px;
+    margin-right: 16.5%;
+}
+.button__choose-color,
+.button__prev-color{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.button__circle{
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 100%;
+}
+.circle-color{
+    background-color: rgba(251, 255, 0, 1);
+}
+.circle-prev-color{
+    background-color: rgba(172, 255, 47, 0.959);
+}
+.circle-user-color1{
+    background-color: rgba(255, 0, 0, 1);
+}
+.circle-user-color2{
+    background-color: rgba(129, 150, 255, 1);
+}
+
+.section__canvas{
+    display: flex;
+    height: 512px;
+    margin-top: 4.7%;
+    margin-left: 15%;
+}
+.button-control__canvas{
+    height: 512px;
+}
+.button__canvas-group{
+    position: absolute;
+    top: 12.6%;
+    left: 76%;
+    justify-content: space-around;
+}
+.isActive__button{
+    background-color: rgba(0,0,0,0.05);
+}
+.h1{
+    color: rgba(0, 0, 0, 0.993);
+}
+.input__choose-color{
+    display: none;
+}
+.label__choose-color{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 54px;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    margin-top: 61px;
+    margin-left: 111px;
+    font-family: $font;
+}
+.group-search{
+    height: 260px;
+}
+
+input[type="file"] {
+    display: none;
+}
+.label__load-img,
+.invert__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 48px;
+    margin: 5px;
+    border: 0;
+    border-radius: 20px;
+    background-color: rgba(194, 194, 194, 0.253);
+    font-size: 18px;
+    font-family: $font;
+    &:hover{
+        transform: scale(0.95);
+    }
+}
+
+.input__search-img{
+    width: 220px;
+    height: 48px;
+    margin: 5px;
+    border: 2px solid rgba(194, 194, 194, 0.253);
+    border-radius: 20px;
+    font-family: $font;
+    font-size: 18px;
+}
+.button__search-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    margin-left: 63px;
+    border: 0;
+    border-radius: 20px;
+    background-color: rgba(194, 194, 194, 0.253);
+    font-size: 18px;
+    font-family: $font;
+    &:hover{
+        transform: scale(0.95);
+    }
+}
+
+.button-range__container{
+    display: flex;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+.button-range{
+    width: 50px;
+    height: 35px;
+    margin-left: 10px;
+    border: 0;
+    border-radius: 20px;
+    background-color: rgba(194, 194, 194, 0.253);
+    font-size: 18px;
+    font-family: $font;
+    line-height: 1px;
+    &:hover{
+        transform: scale(0.95);
+    }
+}
