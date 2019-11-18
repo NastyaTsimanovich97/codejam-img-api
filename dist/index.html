@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='../dist/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <title>Codejam-Palette</title>
+<link href="style.css" rel="stylesheet"></head>
+<body id="capture">
+        <header class="header">
+                <nav class="navigation-menu">
+                    <div class="nav-icon"><img src="images/5210510d07f48b737a2bea7a0eb01ec0.svg" alt="navigation"></div>
+                    <h1 class="header-text">CodeJam-Palette</h1>
+                    <div class="menu"><img class="menu-icon" src="images/5d181859835f81833e1b739a60b9dad8.svg" alt="menu"></div>
+                </nav>
+            </header>
+            <main>
+                <section class="button-control">
+                    <section class="palette">
+                            <div class="button-group-vertical">
+                                <button type="button" class="button button__paint-bucket" id="button__palette"> <img class="button__icon icon-bucket" src="images/3e638223c6b299f4739a344595d500b5.svg" alt="bucket" >Fill bucket</button>
+                                <button type="button" class="button button__choose-color" id="button__palette"> 
+                                    <input type="color" id="input__choose-color" class="input__choose-color" name="input__choose-color" value='#ffffff'> 
+                                    <label class="label__choose-color" for="input__choose-color">
+                                            <img class="button__icon icon-color" id="icon-color" src="images/06feb93a634d5deb09983efb3ad080c1.svg" alt="icon choose color">
+                                    </label>
+                                    Choose color
+                                </button>
+                                <button type="button" class="button button__pencil" id="button__palette"> <img class="button__icon icon-pencil" src="images/07461e35cccf842edba36b84c89d264f.svg" alt="">Pencil</button>
+                                <button type="button" class="button button__transform" id="button__palette"> <img class="button__icon icon-transform" src="images/9216500c8b873fa88d9a0dd18e259d8e.svg" alt="">Transform</button>
+                            </div>
+                    </section>
+        
+                    <section class="color">
+                            <div class="button-group-vertical">
+                                <button type="button" class="button button__current-color" id="button__color"><div class="button__circle circle-color" ></div> Current color</button>
+                                <button type="button" class="button button__prev-color" id="button__color"><div class="button__circle circle-prev-color" ></div> Prev color</button>
+                                <button type="button" class="button button__user-color-1" id="button__color"><div class="button__circle circle-user-color1" ></div> User color 1</button>
+                                <button type="button" class="button button__user-color-1" id="button__color"><div class="button__circle circle-user-color2" ></div> User color 2</button>
+                            </div>
+                    </section>
+                </section>
+                <section class="section__canvas">
+                    <canvas id="canvas4" class="canvas" width="512" height="512">
+                        <img id="load__img"  alt="img_canvas">
+                    </canvas>
+                </section>
+                <section class="search">
+                    <div class="button-group-vertical group-search">
+                        <button class="invert__button" id="invert__button">Grayscale</button>
+                        <label for="input_file" class="label__load-img">Choose image</label>
+                        <input type="file" name="input_file" id="input_file" class="input__load-img" accept=".jpg, .jpeg, .png">
+                        <input type="search" name="input__search" id="input__search" class="input__search-img" placeholder="Search image">
+                        <button class="button__search-img">Search</button>
+                        <div class="button-range__container">
+                                <button class="button-range button-128">128</button>
+                                <button class="button-range button-256">256</button>
+                                <button class="button-range button-512">512</button>
+                            </div>
+                    </div>
+            </section>
+            </main>
+    <script type="text/javascript" src="../dist/bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script>
+      mocha.setup('bdd');
+    </script>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
